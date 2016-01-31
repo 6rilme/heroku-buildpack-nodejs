@@ -21,7 +21,7 @@ BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
 #export LDFLAGS=-L$BUILD_DIR/zeromq-4.1.4/zeromq-4.1.4/lib
 export CPPFLAGS=-I$BUILD_DIR/zeromq-4.1.4/include
-export CXXFLAGS+=$(CPPFLAGS)
+export CXXFLAGS=$(CPPFLAGS)
 echo "CPPFLAGS=$CPPFLAGS"
 echo "CPPFLAGS=$CXXFLAGS"
 
