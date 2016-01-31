@@ -21,6 +21,7 @@ BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
 #export LDFLAGS=-L$BUILD_DIR/zeromq-4.1.4/zeromq-4.1.4/lib
 export CPPFLAGS=-I$BUILD_DIR/zeromq-4.1.4/include
+echo "CPPFLAGS=$CPPFLAGS"
 
 mkdir -p "$BUILD_DIR/.heroku/node/"
 cd $BUILD_DIR
