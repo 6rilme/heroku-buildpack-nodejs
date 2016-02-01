@@ -24,7 +24,7 @@ cd $BUILD_DIR/zeromq-4.1.4
 make
 
 #export LDFLAGS=-L$BUILD_DIR/zeromq-4.1.4/zeromq-4.1.4/lib
-export LDFLAGS=-L$BUILD_DIR/zeromq-4.1.4/lib
+export LDFLAGS=-L$BUILD_DIR/zeromq-4.1.4/.libs
 export CPPFLAGS=-I$BUILD_DIR/zeromq-4.1.4/include
 export CXXFLAGS=-I$BUILD_DIR/zeromq-4.1.4/include
 echo "CPPFLAGS=$CPPFLAGS"
